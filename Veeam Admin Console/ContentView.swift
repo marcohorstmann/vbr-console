@@ -43,6 +43,7 @@ struct ContentView: View {
         withAnimation {
             let newItem = Item(timestamp: Date())
             modelContext.insert(newItem)
+            print("added")
         }
     }
 
@@ -56,6 +57,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainMenuView()
         .modelContainer(for: Item.self, inMemory: true)
 }

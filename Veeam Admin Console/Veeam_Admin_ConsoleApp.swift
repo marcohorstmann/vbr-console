@@ -25,7 +25,7 @@ struct Veeam_Admin_ConsoleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainMenuView()
         }
         .modelContainer(sharedModelContainer)
     }

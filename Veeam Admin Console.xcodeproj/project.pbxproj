@@ -12,6 +12,12 @@
 		A920444B2BAA292300190ACF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920444A2BAA292300190ACF /* Item.swift */; };
 		A920444D2BAA292600190ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A920444C2BAA292600190ACF /* Assets.xcassets */; };
 		A92044502BAA292600190ACF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A920444F2BAA292600190ACF /* Preview Assets.xcassets */; };
+		A92044572BAA294100190ACF /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92044562BAA294100190ACF /* MainMenuView.swift */; };
+		A92044592BAA2BAF00190ACF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A92044582BAA2BAF00190ACF /* Localizable.xcstrings */; };
+		A920445B2BAA2D7000190ACF /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A920445A2BAA2D7000190ACF /* JobView.swift */; };
+		A9B389492BAB1AF400BA14E9 /* MySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B389482BAB1AF400BA14E9 /* MySettingsView.swift */; };
+		A9B3894B2BAB1FEC00BA14E9 /* RestAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3894A2BAB1FEC00BA14E9 /* RestAPIHelper.swift */; };
+		A9B3894D2BAB34E300BA14E9 /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3894C2BAB34E300BA14E9 /* DataTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		A920444A2BAA292300190ACF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A920444C2BAA292600190ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A920444F2BAA292600190ACF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A92044562BAA294100190ACF /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		A92044582BAA2BAF00190ACF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A920445A2BAA2D7000190ACF /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
+		A9B389482BAB1AF400BA14E9 /* MySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingsView.swift; sourceTree = "<group>"; };
+		A9B3894A2BAB1FEC00BA14E9 /* RestAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIHelper.swift; sourceTree = "<group>"; };
+		A9B3894C2BAB34E300BA14E9 /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 				A920444A2BAA292300190ACF /* Item.swift */,
 				A920444C2BAA292600190ACF /* Assets.xcassets */,
 				A920444E2BAA292600190ACF /* Preview Content */,
+				A92044562BAA294100190ACF /* MainMenuView.swift */,
+				A92044582BAA2BAF00190ACF /* Localizable.xcstrings */,
+				A920445A2BAA2D7000190ACF /* JobView.swift */,
+				A9B389482BAB1AF400BA14E9 /* MySettingsView.swift */,
+				A9B3894A2BAB1FEC00BA14E9 /* RestAPIHelper.swift */,
+				A9B3894C2BAB34E300BA14E9 /* DataTypes.swift */,
 			);
 			path = "Veeam Admin Console";
 			sourceTree = "<group>";
@@ -112,6 +130,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = A920443A2BAA292300190ACF;
 			productRefGroup = A92044442BAA292300190ACF /* Products */;
@@ -130,6 +149,7 @@
 			files = (
 				A92044502BAA292600190ACF /* Preview Assets.xcassets in Resources */,
 				A920444D2BAA292600190ACF /* Assets.xcassets in Resources */,
+				A92044592BAA2BAF00190ACF /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92044492BAA292300190ACF /* ContentView.swift in Sources */,
+				A9B3894D2BAB34E300BA14E9 /* DataTypes.swift in Sources */,
+				A9B3894B2BAB1FEC00BA14E9 /* RestAPIHelper.swift in Sources */,
 				A920444B2BAA292300190ACF /* Item.swift in Sources */,
 				A92044472BAA292300190ACF /* Veeam_Admin_ConsoleApp.swift in Sources */,
+				A92044572BAA294100190ACF /* MainMenuView.swift in Sources */,
+				A920445B2BAA2D7000190ACF /* JobView.swift in Sources */,
+				A9B389492BAB1AF400BA14E9 /* MySettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
