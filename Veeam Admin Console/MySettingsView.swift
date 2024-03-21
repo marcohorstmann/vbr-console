@@ -9,11 +9,22 @@
 import SwiftUI
 
 struct MySettingsView: View {
+
+    private let test = ["username": "HOMELAB\\Administrator", "password": "HomeLab4m3x!", "grant_type": "password"]
+    private let veeamConnection: VeeamConnection
+
+    init() {
+        self.veeamConnection = VeeamConnection(baseURL: "https://192.168.30.30:9419/api/oauth2/token", headerData: test, username: "HOMELAB\\Administrator", password: "HomeLab4m3!")
+    }
+
     var body: some View {
-        // VeeamConnection.obtainBearerToken(baseURL: "https://192.168.30.30:9419/api/oauth2/token", username: "HOMELAB\\Administrator", password: "HomeLab4m3!")
-        let test = ["username": "HOMELAB\\Administrator", "password": "HomeLab4m3!", "grant_type": "password"]
-        let veeamConnection = VeeamConnection.obtainBearerToken(baseURL: "https://192.168.30.30:9419/api/oauth2/token", username: "HOMELAB\\Administrator", password: "HomeLab4m3!", headerData: test, completion: <#(String?) -> Void#>)
         Text("Test")
+            .onAppear{
+                print("Obtain Bearer")
+                veeamConnection.obtainBearerToken { token in
+                    print(token)
+                }
+            }
     }
 }
 

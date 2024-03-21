@@ -34,7 +34,8 @@ class VeeamConnection: NSObject /*, URLSessionDelegate*/ {
         self.password = password
     }
     
-    func obtainBearerToken(baseURL: String, username: String, password: String, headerData: [String: String], completion: @escaping (String?) -> Void) {
+    func obtainBearerToken(completion: @escaping (String?) -> Void) {
+
         var request = URLRequest(url: URL(string: String(baseURL))!)
         request.setValue ("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue ("1.1-rev1", forHTTPHeaderField: "x-api-version")
