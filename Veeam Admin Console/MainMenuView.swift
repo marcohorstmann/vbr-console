@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MainMenuView: View {
     var body: some View {
+        TopMenuView()
         //Text(LocalizedStringResource("Username"))
         TabView {
             ContentView()

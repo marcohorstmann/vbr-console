@@ -4,6 +4,9 @@
     "Add Item" : {
 
     },
+    "Console" : {
+
+    },
     "Insecure" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -30,7 +33,14 @@
       }
     },
     "Jobs" : {
-
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jobs"
+          }
+        }
+      }
     },
     "Password" : {
       "extractionState" : "manual",
@@ -67,9 +77,6 @@
           }
         }
       }
-    },
-    "Test" : {
-
     },
     "This is job 1" : {
 

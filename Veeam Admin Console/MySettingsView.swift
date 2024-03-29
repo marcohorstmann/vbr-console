@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct MySettingsView: View {
-
-    private let test = ["username": "HOMELAB\\Administrator", "password": "HomeLab4m3x!", "grant_type": "password"]
+    var accessToken: String = ""
+    private let test = ["username": "HOMELAB\\Administrator", "password": "HomeLab4m3!", "grant_type": "password"]
     private let veeamConnection: VeeamConnection
 
     init() {
@@ -18,11 +18,12 @@ struct MySettingsView: View {
     }
 
     var body: some View {
-        Text("Test")
+        Text(ImportantStuff.accessToken)
             .onAppear{
                 print("Obtain Bearer")
                 veeamConnection.obtainBearerToken { token in
-                    print(token)
+                    //print(token)
+                    //print("test")
                 }
             }
     }

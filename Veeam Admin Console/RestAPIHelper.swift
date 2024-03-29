@@ -50,8 +50,8 @@ class VeeamConnection: NSObject /*, URLSessionDelegate*/ {
             } else if let data = data {
                 print("***0")
                      print(data.base64EncodedString())
-                   print(response)
-                 print(error)
+                ImportantStuff.accessToken =  data.base64EncodedString()              //print(response)
+                 //print(error)
                 print("***1")
                 do {
                     
@@ -59,7 +59,7 @@ class VeeamConnection: NSObject /*, URLSessionDelegate*/ {
                     //print(test)
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
                        let accessToken = json["access_token"] as? String {
-                        print(json)
+                        //print(json)
                         completion(accessToken)
                     } else {
                         print("Ungültige JSON-Antwort")
